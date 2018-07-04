@@ -96,6 +96,7 @@
                              overlayWindow = nil;
                              
                              [windows enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(UIWindow *window, NSUInteger idx, BOOL *stop) {
+                                 
                                  if([window isKindOfClass:[UIWindow class]] && window.windowLevel == UIWindowLevelNormal) {
                                      [window makeKeyWindow];
                                      *stop = YES;

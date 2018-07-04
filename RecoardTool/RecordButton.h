@@ -19,6 +19,7 @@
 - (void)dragExit;
 - (void)dragEnter;
 @end
+
 @interface RecordButton : UIButton<Mp3RecorderDelegate>{
     int maxTime;
     Mp3Recorder *mp3;
@@ -33,6 +34,14 @@
 - (void)stopRecord;
 - (void)cancelRecord;
 
-
-
 @end
+
+
+
+
+
+
+
+
+
+
