@@ -25,7 +25,7 @@
     NSString *title;
 }
 
-@property (nonatomic,weak) id<D3RecordDelegate> delegate;
+@property (nonatomic,weak) id<RecordDelegate> delegate;
 
 - (void)initRecord:(id<RecordDelegate>)delegate maxtime:(int)_maxTime title:(NSString*)title;
 - (void)initRecord:(id<RecordDelegate>)delegate maxtime:(int)_maxTime;

@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RecordButton.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    AVAudioPlayer *play;
+}
 
 
 @end
