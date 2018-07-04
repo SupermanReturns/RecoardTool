@@ -21,10 +21,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    _btn=[[RecordButton alloc]initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width-40)/2, 100, 40, 30)];
+    _btn=[[RecordButton alloc]initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width-80)/2, 100, 80, 50)];
+    [_btn setTitle:@"录音" forState:UIControlStateNormal];
+    [_btn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    _btn.backgroundColor=[UIColor yellowColor];
     [self.view addSubview:_btn];
     
-    _centerBtn=[[RecordButton alloc]initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width-40)/2, CGRectGetMaxY(_btn.frame)+50, 40, 30)];
+    _centerBtn=[[RecordButton alloc]initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width-100)/2, CGRectGetMaxY(_btn.frame)+50, 100, 60)];
+    [_centerBtn setTitle:@"开始录音" forState:UIControlStateNormal];
+    [_centerBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+    _centerBtn.backgroundColor=[UIColor yellowColor];
     [self.view addSubview:_centerBtn];
     
     [_btn initRecord:self maxtime:10 title:@"上滑取消录音"];
